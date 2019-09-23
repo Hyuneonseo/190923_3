@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>새 서문</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
+		<style type="text/css">
+			body {overflow: hidden;}
+			* { box-sizing: border-box; }
+			img.bg {
+			    min-height: 100%;
+			    min-width: 1024px;
+			    width: 100%;
+			    height: auto;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			}
+
+			@media screen and (max-width: 1024px){
+			    img.bg {
+			    left: 50%;
+			    margin-left: -512px; }
+			}
+
+			@keyframes bing{
+				from{transform: rotateZ(0deg);}
+				to{transform: rotateZ(360deg);}
+			}
+
+			@keyframes down{
+				from{top: -200px;}
+				to{top: 0px;}
+			}
+
+			@keyframes up{
+				from{top: 0px;}
+				to{top: -200px;}
+			}
+
+			a:link, a:active, a:visited {
+  			color: black;
+ 			text-decoration: none;
+			}
+			a:hover{color: orangered;}
+
+
+			.mbar{position: absolute; top: 0px; left: 0px; width: 100%; height: 50px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 2em; background-color: white; border-bottom: 1px solid black; overflow: hidden;}
+			.bfbt{position: relative; top: 0px; left: 5px; float: left;}
+			.nwbt{position: relative; margin: auto; text-align: center;}
+			.nxbt{position: absolute; top: 0px; right: 5px; float: right;}
+
+
+			#rmbar{position: absolute; top: -200px; left: 0px; width: 100%; height: 200px; font-family: 'Noto Sans KR', sans-serif; font-weight: 100; font-size: 2em; background-color: white; z-index: 999; float: left; animation: down 1s paused forwards;}
+			.abar{position: relative; top: 0px; left: 0px; width: 100%; height: 49px; border-bottom: 1px solid black;}
+
+			.abar:hover{color: white; background-color: black;}
+
+
+			.preface{position: absolute; top: 80px; left: 440px; width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 2.5em; text-align: left; float: left; overflow: auto;}
+
+
+			.fir{position: relative; top: 0px; left: 0px; width: 850px; height: 230px;  }
+			.sec{position: relative; top: 180px; left: 0px; width: 850px; height: 230px; }
+			.thir{position: relative; top: 350px; left: 0px; width: 97%; height: 180px;}
+			.four{position: relative; top: 510px; left: 0px; width: 850px; height: 380px; }
+			.fif{position: relative; top: 650px; left: 0px; width: 850px; height: 640px; }
+			.sixth{position: relative; top: 350px; left: 0px; width: 850px; height: 440px;}
+
+
+			.fir:hover{cursor: help; text-decoration: underline wavy yellow;}
+			.sec:hover{cursor: help; text-decoration: underline wavy yellow;}
+			.four:hover{cursor: help; text-decoration: underline wavy yellow;}
+			.fif:hover{cursor: help; text-decoration: underline wavy yellow;}
+
+
+			#nav1:hover{color: white; background-color: black; width: 100%; cursor: pointer;}
+			#nav2:hover{color: white; background-color: black; width: 100%; cursor: pointer;}
+			#nav3:hover{color: white; background-color: black; width: 100%; cursor: pointer;}
+			#nav4:hover{color: white; background-color: black; width: 100%; cursor: pointer;}
+
+
+			#rnav1{visibility: hidden; position: relative; top: 0px; right: 0px; float: right; color: white;}
+
+
+			.preimg{width: 900px; height: 900px; position: absolute; top: 150px; right: 30px; }
+
+			#preimg1{position: relative; top: 0px; left: 0px; background-color: ; width: 55%; float: left; animation: bing 3s infinite paused;}
+			#preimg2{position: relative; bottom: -350px; left: -400px; background-color: ; width: 30%; float: left; animation: bing 3s infinite paused;}
+			#preimg3{position: relative; top: -550px; right: 0px; background-color: ; width: 38%; float: right; animation: bing 3s infinite paused;}
+			#preimg4{position: relative; top: 60px; right: -200px; background-color: ; width: 28%; float: right; animation: bing 3s infinite paused;}
+
+			#target{position: absolute; top: 200px; left: 0px; width: 200px; height: 100px; background-color: red; visibility: inline;}
+
+			
+		</style>
+	</head>
+	<body>
+		<img src="gradi.png" alt="bckgound" class="bg">	
+
+		<div class="mbar">
+			<img src="morning.gif" style="position: absolute; top: 0px; left: 0px; width: 100%; position: absolute; top: -350px;">
+			<div class="nwbt">< 서문 ></div>
+			
+		</div>
+
+		
+		</div>
+
+		<div class="preface">
+			<div class="fir" onmouseover="play()" onmouseout="nplay()">
+				“전 세계에서 제나라 말과 글로 이름을 짓지 않는 나라는 우리나라가 유일하다. 역사적으로 보면 한국식 한자는 분명 우리 것이지만 지금 국어기본법에서 정한 우리글은 아니다.”<br><김슬옹의 세종한글이야기>
+			</div>
+			<div class="sec" onmouseover="play1()" onmouseout="nplay1()">
+				대부분 이름이라는 것이 온전히 나의 것이지만 완벽히 남으로부터 주어지는 형태다. 후천적으로 개명을 하지 않는 이상 이름짓기에는 나의 개입이 있을 수 없다. 더구나 이러한 이름에는 쉽게 극복할 수 없는 몇 고정관념이 있어왔다. 
+			</div>
+			<div class="thir">
+				첫째. 중국식 성의 익숙함<br>
+				둘째. 3음절형의 이름<br>
+				셋째. 명사형에 갇힌 쓰임새<br>
+				넷째. 아빠 성씨와 항렬문화
+			</div>
+			<div class="four" onmouseover="play2()" onmouseout="nplay2()">
+				단순히 한글이름이 더 우월하고 한자 이름은 열등하다는 메세지를 전달하려는 것이 아니라 앞서 말한 고정관념을 타파하고 주체적인 태도로 이름을 바라보자는 의견을 말하고 싶었다. 또한 한글 이름 짓기에서 주의할 점, 너무 ‘예쁘고 고운’ 한글 이름만을 고집하는 경향에서 벗어나 독창성과 문화성을 충족시키는 한글이름의 역량을 알리고 싶다.
+			</div>
+			<div class="fif" onmouseover="play3()" onmouseout="nplay3()">
+				따라서 이 프로젝트는 앞으로 평생 나를 이르는 단어가 될 이름을 나의 손으로, 나의 뜻을 담아 짓는 것이 들어맞지 않을까? 하는 생각에서 시작되었고 한글 이름짓기 문화에 혁명을 기대하며 이를 경험 해볼 수 있는 작은 체험의 장을 제공하고자 한다.
+			</div>
+			<a href="page3.html">
+			<div class="sixth">
+				본격 한글이름 만들기 ▶︎
+			</div>
+			</a>
+		</div>
+
+		
+
+		<div class="ftr" style="width: 100%; height: 80px; background-color: white; border-top: 1px solid black; position: fixed; bottom: 0px; left: 0px; text-align: center; font-weight: 700; font-size: 3.1em; line-height: 1.5em;">
+
+  		<div class="bfbt" style="position: absolute; z-index: 999;"><a href="index.html">◀︎ 오프닝</a></div>
+
+  		<div class="nwbt" style="position: relative; right: -3px;"><a href="index.html">HOME</a></div>
+  
+
+  		<div class="nxbt"><a href="page3.html"> 본격 한글이름 만들기 ▶︎</a></div>
+  		</div>
+	</body>
+	<script type="text/javascript">
+		
+		function down(){
+			rmbar.style.animationPlayState = "running";
+		}
+
+		function up(){
+			rmbar.style.animationPlayState = "running";
+		}
+
+		 function play(){
+		 	preimg1.style.animationPlayState = "running";
+		 }
+		 function nplay(){
+		 	preimg1.style.animationPlayState = "paused";
+		 }
+
+		 function play1(){
+		 	preimg3.style.animationPlayState = "running";
+		 }
+		 function nplay1(){
+		 	preimg3.style.animationPlayState = "paused";
+		 }
+
+		 function play2(){
+		 	preimg2.style.animationPlayState = "running";
+		 }
+		 function nplay2(){
+		 	preimg2.style.animationPlayState = "paused";
+		 }
+
+		 function play3(){
+		 	preimg4.style.animationPlayState = "running";
+		 }
+		 function nplay3(){
+		 	preimg4.style.animationPlayState = "paused";
+		 }
+
+		
+	</script>
+
+	<script>
+function scrollFunction() {
+     document.getElementById("target").style.visibility = "hidden";   //To hide the element.
+}
+
+window.onscroll = scrollFunction;
+</script>
+
+	</html>
